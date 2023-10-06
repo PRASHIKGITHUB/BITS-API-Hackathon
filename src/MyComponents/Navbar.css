@@ -1,0 +1,33 @@
+#nav{
+    width: 90%;
+    display: flex;
+    
+    justify-content:space-around;
+    border-bottom: 4px solid saddlebrown;
+    
+}
+#nav-left{font-family: 'PT Sans Caption', sans-serif;
+    width: 30%;
+    font-size: 150%;
+    /* font-size: 30px; */
+
+}
+
+#nav-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+#nav-right a{
+    transition: all 0.3s;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    padding-right:5% ;
+    padding-left:5% ;
+    font-size: 150%;
+}
+#nav-right a:hover{
+    color: rgb(159, 129, 188);
+}
