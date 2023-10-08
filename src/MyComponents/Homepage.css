@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: end;
     padding-bottom: 25px;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/700.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 #innerx{
     display: flex;
@@ -13,7 +18,8 @@
     align-items: center;
     height: 95%;
     width: 95%;
-    background-color: #DAAD86;
+    /* background-color: #DAAD86; */
+    background-color: #daad86c0;
     box-shadow: 0px 0px 3px 10px #DAAD86;
     border-radius: 10px;
 }
@@ -38,6 +44,14 @@
     font-size: 8em;
     word-spacing: 0.3em;
     letter-spacing: 20%;
-    /* font-family: 'Permanent Marker', cursive; */
     font-family: 'Macondo', cursive;
+    filter: drop-shadow(10px 10px 20px);
+}
+
+/* Animation part */
+#rightAni{
+    width: 20%;
+}
+#leftAni{
+    width: 20%;
 }

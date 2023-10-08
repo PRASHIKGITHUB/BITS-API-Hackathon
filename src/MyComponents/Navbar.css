@@ -1,15 +1,17 @@
 #nav{
-    width: 90%;
+    width: 100%;
     display: flex;
-    
+    background-color: #daad86c0;
     justify-content:space-around;
     border-bottom: 4px solid saddlebrown;
+    position: fixed;
+    z-index: 99;
     
 }
 #nav-left{font-family: 'PT Sans Caption', sans-serif;
     width: 30%;
     font-size: 150%;
-    /* font-size: 30px; */
+    margin-bottom: 6px;
 
 }
 
@@ -18,16 +20,36 @@
     display: flex;
     justify-content: center;
     font-family: 'PT Sans Caption', sans-serif;
+    margin-bottom: 6px;
+
 }
 #nav-right a{
-    transition: all 0.3s;
     text-decoration: none;
     color: black;
     font-weight: 800;
     padding-right:5% ;
     padding-left:5% ;
     font-size: 150%;
+    transition: all ease-in 0.3s;
+    position: relative;
+}
+#nav-right a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background-color: #333;
+    transition: all ease 1s;
+}
+#nav-right a:hover::after{
+    width: 100%;
 }
 #nav-right a:hover{
-    color: rgb(159, 129, 188);
+    color: rgb(129, 78, 15);
+    filter: drop-shadow(10px 10px 20px);
+}
+#nav-right a:active{
+    scale: 0.9;
 }
