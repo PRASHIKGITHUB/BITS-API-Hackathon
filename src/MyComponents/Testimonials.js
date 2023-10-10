@@ -23,12 +23,11 @@ const Testimonials = () => {
                 <button>
                   View Post
                 </button>
-
-
               </div>
             </div>
             <div id="card">Himduyti</div>
             <div id="card">Ajay</div>
+            <div id="card">Hello</div>
         </div>
     </div>
   )
