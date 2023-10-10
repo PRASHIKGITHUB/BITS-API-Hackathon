@@ -2,17 +2,11 @@
 #x{
     height: 100%;
     width: 100%;
-    background-color: #BC986A;
     display: flex;
     justify-content: center;
     align-items: end;
     padding-bottom: 25px;
-    background-image: url('./700.jpg');
-    /* background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/700.jpg); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-color:rgba(255, 255, 255, 0);
 }
 #innerx{
     display: flex;
@@ -50,10 +44,4 @@
     filter: drop-shadow(10px 10px 20px);
 }
 
-/* Animation part */
-#rightAni{
-    width: 20%;
-}
-#leftAni{
-    width: 20%;
-}
+

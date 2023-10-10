@@ -1,7 +1,8 @@
 #nav{
     width: 100%;
     display: flex;
-    background-color: #daad86c0;
+    background-color: #daad866d;
+    backdrop-filter:blur(3px);
     justify-content:space-around;
     border-bottom: 4px solid saddlebrown;
     position: fixed;
@@ -41,13 +42,13 @@
     height: 4px;
     width: 0%;
     background-color: #333;
-    transition: all ease 1s;
+    transition: all ease 0.5s;
 }
 #nav-right a:hover::after{
     width: 100%;
 }
 #nav-right a:hover{
-    color: rgb(129, 78, 15);
+    color: rgb(219, 94, 200);
     filter: drop-shadow(10px 10px 20px);
 }
 #nav-right a:active{

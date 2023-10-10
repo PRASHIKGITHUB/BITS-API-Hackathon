@@ -2,10 +2,11 @@
     padding-top: 3%;
     padding-bottom: 3%;
     height: 100%;
-    background-color:#BC986A ;
+    /* background-color:transparent ; */
     display: flex;
     justify-content: center;
-    background-image: url('./700.jpg');
+    /* background-image: url('./700.jpg'); */
+    
 }
 #testi #innerT{
     width: 95%;

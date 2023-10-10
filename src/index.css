@@ -6,6 +6,11 @@
 html,body{
     height: 100%;
     width: 100%;
+    background-image: url('./MyComponents/700.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 #root{
     height: 100%;
