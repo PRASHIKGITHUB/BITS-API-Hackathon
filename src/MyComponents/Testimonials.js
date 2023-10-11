@@ -28,6 +28,7 @@ const Testimonials = () => {
             <div id="card">Himduyti</div>
             <div id="card">Ajay</div>
             <div id="card">Hello</div>
+            <div id="card">Hello</div>
         </div>
     </div>
   )

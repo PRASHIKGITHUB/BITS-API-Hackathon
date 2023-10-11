@@ -4,6 +4,10 @@ const FindPet = () => {
   return (
     <div id='find'>
         <div id="findIn">
+        <div id="right">
+              <h2>Quote of the Day</h2>
+              <h1>"The magic you are looking for is in the work you are avoiding"</h1>
+            </div>
             <div id="left">
               <h1>Find Your Pet!</h1>
               <div className="findpet">
@@ -27,10 +31,7 @@ const FindPet = () => {
               </div>
 
             </div>
-            <div id="right">
-              <h2>Quote of the Day</h2>
-              <h1>"The magic you are looking for is in the work you are avoiding"</h1>
-            </div>
+           
         </div>
     </div>
   )
