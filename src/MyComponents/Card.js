@@ -1,7 +1,15 @@
 import React from 'react'
 import Image from './img.jpg';
+import { useNavigate } from 'react-router-dom';
 
-export const Card = ({img,name,age,color,breed}) => {
+export const Card = ({id,img,name,age,color,breed}) => {
+
+  const navigate=useNavigate();
+  const handleClick=()=>{
+    const url=`/process/${id}`;
+    navigate(url);
+  }
+
   return (
     <div id="card">
         <img src={img} alt="" />
@@ -17,8 +25,8 @@ export const Card = ({img,name,age,color,breed}) => {
             <h2>Breed : {breed}</h2>
             <br />
             {/* <h2>Information : Playful</h2> */}
-            <button>
-                View Post
+            <button onClick={()=>{handleClick()}}>
+                Adopt
             </button>
         </div>
     </div>

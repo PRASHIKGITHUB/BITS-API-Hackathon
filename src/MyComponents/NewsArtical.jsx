@@ -1,6 +1,9 @@
 import React from 'react'
 import './NewsArtical.css'
 const NewsArtical = () => {
+
+  const apiKey='b23749feb4b644538697f0c565fb2650';
+
   return (
     <div id='Artical'>
         <div id="title-head">

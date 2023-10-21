@@ -22,7 +22,7 @@ const Testimonials = () => {
 
   useEffect(()=>{
     async function getData(){
-      const accessToken='eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJuVnNDbU1EUGxXblFNaVlRNEhMYzc4TTFoVG9IT0VsQXliaXRHSmxEVHRYMkc3MzlOOSIsImp0aSI6ImMxYTYyN2E0YTZiYmY2YzA0MGNkZDY4OWViOTNhNDU5YjZjOGQyNmRmY2FhOWViZTc2Njc4YjEwMWM5OGVlYzk3ZTllOTU3ZGJjMzE3ZmFlIiwiaWF0IjoxNjk3ODExOTA5LCJuYmYiOjE2OTc4MTE5MDksImV4cCI6MTY5NzgxNTUwOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.QGE7pM13woIdm3a-EDeEfrtnpqygvtmmFV26V-2Zve9OekOk_K8R1a2-3E5wUoaxDW0oNYtUE4cj5O-zePVNjsnASAdBAXb7KZMoGUks3XUJ8mEGJ-lfmQs1390G3FtVMK6NiQnlNXZOwd2eJ10x-7I3e5NUTA9qk6NKeRWVuf_fsLwkPCI_ohwDde2hBgLb9jnDHSFdvKTKuIZE0-NVofms1NFTmJDq_QMlM1B7gYtUr_KbcWMkFE0A7V7RfljuikEEKzTmRpc70ptm4RlzGWpKZX2WbOerjT-PxMfUSKe0UJ387xNruABM1qRp8KHgOBEGkqEZ61dHRnxFSDd9dw'
+      const accessToken="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJnQUJpWE9BWEdzUVVQVlFRYVhJSUJlMkdsNnFvYzlRbXJUbWZET3poNHV4UVJKYU1UTyIsImp0aSI6IjZhMGY1ZTIxODdiNzExODRlOTcyNTJiZDMyNzU3NTM5N2YxZGM0ZjkyOTA3YTA3MDdkZjhhMDFhNjhlYWIxZThlMWZiZmNjZGIxNzkwMzQ1IiwiaWF0IjoxNjk3ODg1OTg1LCJuYmYiOjE2OTc4ODU5ODUsImV4cCI6MTY5Nzg4OTU4NSwic3ViIjoiIiwic2NvcGVzIjpbXX0.ruAJ3cGNhH386EWAnGqkh2tnONVZAWrVW7Ueu1GsaJdxTf5CvrByBYtAUOWRZy6R64TXljl3bhQsfzm8_oQ1NnQuZ8O-D7noVxAkc5fDwH2YTOEucPHVyx70wk39RmsEuw26j0nF1RGGfneVumnfc7G-DEgMnUUkVqlOT1WtI9uqxYRM1hh1lqhUhNojYi9NgZOgVzbzGx6JBwnlEdqfeT3rRCupsGmFzqlQGuVLisjnCiohelwadlNxMJSuFMXFfq8kWoA_HDQ1kB-SO8Yfc7KwwKIRyrazP-96UUStiT8WFleqssSgcVo3k0CDbfxC9FY239FGMZJwTk9Pcj4c5A";
       const instance=axios.create();
       const url='https://api.petfinder.com/v2/animals?type=dog';
       try{
@@ -49,6 +49,7 @@ const Testimonials = () => {
         <div id="innerT">
             {pets?.map(pet=>(
               <Card
+                id={pet.id}
                 img={pet.photos[0]?pet.photos[0].small:Image}
                 name={pet.name}
                 age={pet.age}

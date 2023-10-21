@@ -3,6 +3,7 @@ import './Process.css';
 import { db } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import { Timestamp } from 'firebase/firestore';
+import { useParams } from 'react-router-dom';
 
 const Process = () => {
 
@@ -14,10 +15,14 @@ const Process = () => {
   const [type,setType]=useState();
   const [reason,setReason]=useState();
 
+  const {id}=useParams();
+
   const navigate=useNavigate();
 
   const handleSubmit=(e)=>{
     e.preventDefault();
+    console.log(id);
+    return;
     const info={
       name,email,phone,address,experience,type,reason,
       createdAt:String(Timestamp.now().toDate())

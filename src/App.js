@@ -14,30 +14,14 @@ function App() {
   return (
     <>
    <Router>
-    {/* <div class="App"> */}
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Homepage/>}></Route>
+        <Route exact path="/home" element={<Homepage/>}></Route>
+        <Route exact path="/Process/:id" element={<Process/>}></Route>
+        <Route exact path="/listing" element={<Listing/>}></Route>  
+        <Route exact path="/" element={<Homepage/>}></Route>
       </Routes>
-      <Routes>
-        <Route path="/loggedin" element={<LoggedIn/>}></Route>
-      </Routes>
-      <Routes>
-        <Route path="/home" element={<Homepage/>}></Route>
-      </Routes>
-      <Routes>
-        <Route path="/Process" element={<Process/>}></Route>
-      </Routes>
-
-      <Routes>
-        <Route path="/listing" element={<Listing/>}></Route>  
-      </Routes>
-       
-       <Footer/>
-        
-
-    {/* </div> */}
-
+      <Footer/>
    </Router>
     </>
   );
