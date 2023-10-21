@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: end;
     padding-bottom: 25px;
-    background-color:rgba(255, 255, 255, 0);
 }
 #innerx{
     display: flex;
@@ -43,5 +42,45 @@
     font-family: 'Macondo', cursive;
     filter: drop-shadow(10px 10px 20px);
 }
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    /* 
+    Phones
+    */
+    #Webname h1{
+        font-size: 4em;
+        letter-spacing: 10%;
+    }
+}
+@media(min-width:600px){ /* 600px-768px*/
+    /* 
+    portrain tablets and big phones
+    */
+    #Webname h1{
+        font-size: 5em;
+        letter-spacing: 10%;
+    }
+}
+@media(min-width:768px){ /* 768px-992px*/
+    /* 
+    tablet
+    */
+    #Webname h1{
+        font-size: 6em;
+        letter-spacing: 10%;
+    }
+
+}
+@media(min-width:992px){/*992px-1200px*/
+    /* 
+    Laptops
+    */
+    #Webname h1{
+        font-size: 7em;
+        letter-spacing: 10%;
+    }
+}
+
 
 

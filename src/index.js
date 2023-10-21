@@ -2,11 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
-import Homepage from './MyComponents/Homepage';
-import Testimonials from './MyComponents/Testimonials';
-import Navbar from './MyComponents/Navbar';
-import FindPet from './MyComponents/FindPet';
-import img from './MyComponents/700.jpg'
 
 
 // import reportWebVitals from './reportWebVitals';
@@ -14,9 +9,7 @@ import img from './MyComponents/700.jpg'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
     <App/>
-
   </React.StrictMode>
 );
 

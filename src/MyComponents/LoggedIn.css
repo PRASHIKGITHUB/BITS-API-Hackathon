@@ -1,0 +1,29 @@
+#Logged-in{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(177, 210, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Logged-in #main{
+    width: 90%;
+    height: 60%;
+    background-color: rgba(189, 158, 230, 0.026);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#main p a{
+    text-decoration:wavy;
+    color: rgb(113, 77, 222);
+}
+#main h1{
+    font-size: 38px;
+    font-weight: 1000;
+    color: rgb(174, 111, 53);
+}
