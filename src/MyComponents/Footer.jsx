@@ -14,7 +14,7 @@ const Footer = () => {
         <div id="section">
             <h1>Navigation</h1>
             <div id="as">
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
                 <a href="#">Adoption listing</a>
                 <a href="#">SignUp</a>
             </div>

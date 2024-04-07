@@ -54,7 +54,7 @@
     width: 100%;
 }
 #nav-right a:hover{
-    color: rgb(219, 94, 200);
+    color: rgb(60, 130, 210);
     filter: drop-shadow(10px 10px 20px);
 }
 #nav-right a:active{

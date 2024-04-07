@@ -1,34 +1,146 @@
-#Artical{
-    width: 100%;
-    /* background-color: aqua; */
+#testi{
+    padding-top: 3%;
+    padding-bottom: 3%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#cards{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* overflow: hidden; */
 }
-#cards #artical-card{
+#testi #innerT{
+    overflow-x: hidden;
+    width: 90%;
+    background-color: #daad86c0;
+    box-shadow: 0px 0px 3px 10px #daad86d6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    white-space:nowrap;
+    scroll-behavior: smooth;
+}
+#card{
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     font-family: 'Macondo', cursive;
     border-radius: 8px;
     margin-right: 15px;
     margin-left: 15px;
-    min-width: 400px;
-    max-width: 410px;
-    height:300px;
+    min-width: 403px;
+    height:675px;
     background-color: #659dbdb5;
     transition: all 0.5s;
     box-shadow: 0px 0px 3px 2px #9f684c;
 }
-#Artical #title-head h2 {
-    color: red;
-    font-size: 30px;
+#card:hover{
+    transform: scale(1.05);
+}
+#card img{
+    height: 50%;
+    object-fit: covert;
+    object-position: center;
+}
+#PetDis{
+    position: relative;
+}
+h1,h2{
+    padding-left: 15px;
+}
+#PetDis button{
+    position: absolute;
+    right: 9%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: medium;
+    transition: all 0.3s;
+    background-color: #9f684c;
+}
+#PetDis button:hover{
+    box-shadow: 8px 8px 0px #9f684cc6;
+}
+#leftbtn{
+    position: absolute;
+    left: 0;
+    height: 30%;
+    padding: 5px;
+    background-color: rgba(116, 221, 142, 0.623);
+    border: none;
+    border-radius: 5px;
+
+}
+#rightbtn{
+    position: absolute;
+    right: 0;
+    height: 30%;
+    padding: 5px;
+    background-color: rgba(116, 221, 142, 0.623);
+    border: none;
+    border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    /* 
+    Phones
+    */
+    #rightbtn{
+        right: 0;
+    }
+    #leftbtn{
+        left: 0;
+    }
+}
+
+@media(min-width:600px){ /* 600px-768px*/
+    /* 
+    portrain tablets and big phones
+    */
+    #rightbtn{
+        right: 10px;
+    }
+    #leftbtn{
+        left: 10px;
+    }
+}
+
+@media(min-width:768px){ /* 768px-992px*/
+    /* 
+    tablet
+    */
+    #rightbtn{
+        right: 20px;
+    }
+    #leftbtn{
+        left: 20px;
+    }
+
+}
+
+@media(min-width:992px){/*992px-1200px*/
+    /* 
+    Laptops
+    */
+    #rightbtn{
+        right: 30px;
+    }
+    #leftbtn{
+        left: 30px;
+    }
+        
+}
+
+@media(min-width:1200px){/*beyond 1200px*/
+    /* 
+    Larger screens
+    */
+    #rightbtn{
+        right: 40px;
+    }
+    #leftbtn{
+        left: 40px;
+    }
 }

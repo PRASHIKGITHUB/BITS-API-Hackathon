@@ -32,7 +32,7 @@
     min-width: 403px;
     height:675px;
     background-color: #659dbdb5;
-    transition: all 0.5s;
+    transition: all 1s;
     box-shadow: 0px 0px 3px 2px #9f684c;
 }
 #card:hover{

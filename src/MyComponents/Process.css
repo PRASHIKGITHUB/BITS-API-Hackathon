@@ -9,6 +9,7 @@ body {
 }
 
 .adoption-process {
+  
   text-align: center;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -18,7 +19,9 @@ body {
   margin-left: 30px;
 }
 .adoption-process-content {
-  background-color: #E6F7FF; /* Light Blue background */
+  /* background-color: #E6F7FF; Light Blue background
+  */
+  background-color: #daad86c0;
   border-radius: 10px;
   padding: 20px;
   text-align: left;
@@ -26,6 +29,9 @@ body {
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -63,7 +69,7 @@ body {
 }
 
 .container {
-  background-color: #659DBD; /* Color #2 */
+  background-color: #daad86c0;
   border-radius: 5px;
   padding: 20px;
 
@@ -153,7 +159,8 @@ input[type="submit"]:hover {
   }
 }
 .container {
-  background-color: #659DBD;
+  background-color: #f2a05791;
+  /* Light Blue background********88 */
   border-radius: 5px;
   padding: 40px; /* Increase padding for more space */
   max-width: 800px; /* Increase the maximum width */

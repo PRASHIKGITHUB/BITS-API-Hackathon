@@ -30,3 +30,16 @@
     box-shadow: 0px 0px 3px 2px #9f684c;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+#cardM{
+    width: 100%;
+}
+#cardM h2{
+    margin: 15px;
+}
+#cardM img{
+    margin-bottom: 10px;
+}
+
+#cardM button{
+    position: absolute;
+} 

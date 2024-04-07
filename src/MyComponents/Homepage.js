@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Homepage.css'
 import myImage from './dog1.avif';
 import Navbar from './Navbar';
@@ -8,6 +8,11 @@ import NewsArtical from './NewsArtical';
 import Footer from './Footer';
 
 const Homepage = () => {
+
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[])
+
   return (
     <>
     <div id='x'>
